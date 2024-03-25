@@ -46,9 +46,9 @@ title{
 }
 nav ul {
   list-style-type: none;
- 
-  background-color: #ffffff; 
+  background-color:  rgb(170, 169, 169);
 }
+
 nav a:hover {
   background-color: #ddd;
   color: black; 
@@ -82,6 +82,14 @@ input[required] {
 
 .content {
     display: block;
+}
+
+footer{
+  background-color: grey;
+  color: darkblue;
+  font-size: large;
+  padding: 20px;
+
 }
 @media (max-width: 590px) {
   .table-style, .cell-image, .cell-text {
