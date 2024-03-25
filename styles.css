@@ -98,6 +98,17 @@ input{
     display: block;
 }
 
+.footer{
+  background-color: rgb(212, 190, 237);
+  align-items: center;
+}
+.references{
+  text-align: left;
+}
+#topButton{
+  cursor:pointer;
+}
+
 @media (min-width: 590px) {
     .content {
       display: grid;
