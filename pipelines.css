@@ -20,9 +20,9 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
 
 }
-a :hover{
-    color: rgb(28, 5, 93);
-    background-color: rgb(246, 246, 11);
+a:hover{
+    background-color: #ddd;
+    color: darkblue;
     opacity: 0.5;
 }
 article::first-letter{
@@ -85,6 +85,7 @@ footer{
 #topButton{
     cursor:pointer;
 }
+
 @media screen and (min-width: 590px){
     body{
         display:grid;
@@ -141,3 +142,4 @@ footer{
     width:auto;
     height: auto;
 }
+

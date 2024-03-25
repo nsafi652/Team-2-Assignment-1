@@ -6,12 +6,16 @@
     <meta name ="keywords" content ="HTML">
     <meta name ="author" content=" Palakdeep Mundi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <title>Mental Issues</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <a class="skip" href="#top" type="button" >Skip to main</a>
 
+    <title>Mental Issues</title>
+    <nav>
+        <a href="#abc">Go to bottom</a>
+    </nav>
      <!-- the less and more sign display is found from https://www.w3schools.com/html/html_entities.asp#:~:text=To%20display%20a%20less%20than,to%20remember%20than%20entity%20numbers. -->
     <nav>
-        <ul>
+        <ul class="navigation">
             <li><a  href="Main.html"> &lt &lt Main</a></li>
             <li><a  href="Genocide.html"> &lt &lt Genocide and Ethnic Cleansing</a></li>
             <li><a  href="Pipelines.html"> &lt &lt Pipelines </a></li>
@@ -19,24 +23,23 @@
         </ul>
     </nav>
 
-    <nav>
-        <figure>
-            <img src="images/CompanyLogo.png" alt="Company Logo" width="50" height="50" align="right"/>
-        </figure>  
-    </nav>
+    
 
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#abc">Go to bottom</a>
-        </nav>
+
         <div class="title-banner">
             <h1>Mental Issues </h1>
+            <nav>
+            <figure>
+                <img src="CompanyLogo.png" alt="Company Logo" width="50" height="50" align="right"/>
+            </figure>  
+            </nav>
         </div>
     </header>
     <main>
-        <table class="table-style">
+        <table class="table-style" id="top">
             <tr>
                 <td rowspan="2" colspan="1">
                     <p>
@@ -63,7 +66,7 @@
                 </td>
                 <td rowspan="2" colspan="2">
                     <figure>
-                        <img src="images/Image01.webp" alt="A painting about the thoughts of a person suffering with mental issues" title="Mental Issues" width="440" height="220" class="Image1-style"/>
+                        <img src="Image01.webp" alt="A painting about the thoughts of a person suffering with mental issues" title="Mental Issues" width="440" height="220" class="Image1-style"/>
                         <figcaption>&copy; A painting about the thoughts of a person suffering with mental issues</figcaption>
                     </figure>
                 </td>
@@ -74,7 +77,7 @@
             <h2 id="Symptoms">Symptoms or Signs</h2>
             <p>
                 <section>
-                    <img src="images/image02.jpg" alt=" A poster" title="Mental Health poster" width="400" height="200" class="image-style" align="right" class="image-style"/>
+                    <img src="image02.jpg" alt=" A poster" title="Mental Health poster" width="400" height="200" class="image-style" align="right" class="image-style"/>
 
                     <br/>
 
@@ -115,11 +118,11 @@
                             <legend>Did you find the information okay?</legend>
                             <label></label>
                             <label>Yes
-                            <input name="Yes" type="radio" id="One-way" checked/>
+                            <input name="Did you find the information okay?" type="radio" value="yes" id="One-way" checked/>
                             </label>
                             <br/>
                             <label>No
-                            <input name="No" type="radio" id="Two-way" />
+                            <input name="Did you find the information okay?" type="radio" id="Two-way"  value="no"/>
                             </label>
                             <br/>
                             <input type="submit" value="Submit">
@@ -131,7 +134,7 @@
         </div>
         <section>
             <h2>Treatments</h2>
-            <img src="images/image04.jpg" alt="A picture of medicines" width="300" height="180" align="right" class="image-style"/>
+            <img src="image04.jpg" alt="A picture of medicines" width="300" height="180" align="right" class="image-style"/>
             <article>
                 <p>
                     There are many drugs that can end a depressive episode. Then we have therapies, mostly implying Cognitive Behavioural Therapy(CBT), or Psychotherapy (also called talk therapy).
@@ -164,7 +167,7 @@
     </main>
     <footer id="#abc">&copy;All rights reserved.
         <br/>
-        <a href="#pqr"> Go to top</a>
+        <a href="#top"> Go to top</a>
     </footer>
 </body>
 </html>

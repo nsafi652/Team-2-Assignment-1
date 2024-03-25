@@ -1,0 +1,82 @@
+h1,h2{font-size: 30pt;
+    font-weight: bold;
+    color: darkblue;
+    padding-left: 20px;
+}
+body{font-size: 16pt;
+    font-weight: normal;
+    color: dimgray;
+    background-color: beige;
+    padding-left: 20px;
+}
+#here{
+    color: rgb(212, 45, 84);
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 2em;
+}
+a:hover {
+    background-color: #ddd;
+    color: black; 
+  
+  }
+
+@media screen and (min-width: 590px){
+    body{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        width:1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item{
+        grid-row: auto;
+    }
+}
+@media screen and (min-width: 790px){
+    
+    #main{
+        display: flex;
+        flex: 1;
+    }
+    #section1{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .item {
+        height: auto;
+    } 
+    #section2{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .item2 {
+        height: auto;
+    }
+    #section3{
+        display:grid;
+        display: flex;
+        grid-template-columns: 3fr 1fr;
+    }
+    .item3 {
+        height: auto;
+    }
+}
+
+.skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width:1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip:focus {
+    position: static;
+    width:auto;
+    height: auto;
+}
+

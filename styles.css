@@ -1,10 +1,14 @@
 .title-banner{
+    display: grid;
+    grid-template-columns: 7fr 1fr;
     background-color: rgb(212, 190, 237);
     color: darkblue;
     text-align: center;
     text-shadow: 10px;
     padding: 20px;
     image-rendering: auto;
+
+  
   }
   .table-style {
     width: 100%;
@@ -38,7 +42,7 @@
   }
   body {
     background-color: beige; 
-    color: dimgrey;
+    color: rgb(56, 55, 55);
     background-size: cover;
     background-position: center;
   }
@@ -54,7 +58,7 @@
     background-color: beige; 
   }
   nav a:hover {
-    background-color: #ddd;
+    background-color: #b1b19e;
     color: black; 
   }
   nav a {
@@ -95,10 +99,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+
       }
   }
     
   @media (min-width: 790px) {
+    body{
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3;
+      width:1000px;
+      margin-left: auto;
+      margin-right: auto;
+  }
       .content {
         display: block;
         max-width: 790px;
@@ -106,5 +119,39 @@
         padding: 20px;
       }
   }
+  .skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width:1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip:focus {
+    position: static;
+    width:auto;
+    height: auto;
+}
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(212, 190, 237);
+  height: 86px;
 
+}
+
+.skip{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width:1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+  position: static;
+  width:auto;
+  height: auto;
+}
 
