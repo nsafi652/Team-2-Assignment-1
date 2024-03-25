@@ -83,7 +83,19 @@ input[required] {
 .content {
     display: block;
 }
+@media (max-width: 590px) {
+  .table-style, .cell-image, .cell-text {
+    width: 100%;
+  }
 
+  .cell-image, .cell-text {
+    display: block;  
+  }
+
+  .image-style {
+    width: 100%;  
+  }
+}
 @media (min-width: 590px) {
     .content {
       display: grid;
