@@ -63,6 +63,7 @@ ul li{
 }
 
 .banner{
+    background-color: rgb(190, 175, 94);
     display: grid;
     grid-template-columns: 7fr 1fr;
 }
